@@ -13,6 +13,7 @@
 		C0AF563A2CBDD49D00B7E961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AF56382CBDD49D00B7E961 /* Main.storyboard */; };
 		C0AF563C2CBDD49F00B7E961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AF563B2CBDD49F00B7E961 /* Assets.xcassets */; };
 		C0AF563F2CBDD49F00B7E961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AF563D2CBDD49F00B7E961 /* LaunchScreen.storyboard */; };
+		C0AF56472CBDD7FA00B7E961 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0AF56462CBDD7FA00B7E961 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C0AF563B2CBDD49F00B7E961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0AF563E2CBDD49F00B7E961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0AF56402CBDD49F00B7E961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0AF56462CBDD7FA00B7E961 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		C0AF56312CBDD49D00B7E961 /* BernaolaSnapchat */ = {
 			isa = PBXGroup;
 			children = (
+				C0AF56462CBDD7FA00B7E961 /* GoogleService-Info.plist */,
 				C0AF56322CBDD49D00B7E961 /* AppDelegate.swift */,
 				C0AF56342CBDD49D00B7E961 /* SceneDelegate.swift */,
 				C0AF56362CBDD49D00B7E961 /* ViewController.swift */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0AF563F2CBDD49F00B7E961 /* LaunchScreen.storyboard in Resources */,
+				C0AF56472CBDD7FA00B7E961 /* GoogleService-Info.plist in Resources */,
 				C0AF563C2CBDD49F00B7E961 /* Assets.xcassets in Resources */,
 				C0AF563A2CBDD49D00B7E961 /* Main.storyboard in Resources */,
 			);
