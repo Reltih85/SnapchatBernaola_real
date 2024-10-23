@@ -19,6 +19,10 @@
 		C0AF564F2CBDDE2600B7E961 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C0AF564E2CBDDE2600B7E961 /* FirebaseAuth */; };
 		C0AF56512CBDDE2600B7E961 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C0AF56502CBDDE2600B7E961 /* FirebaseDatabase */; };
 		C0AF56532CBDDE2600B7E961 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C0AF56522CBDDE2600B7E961 /* FirebaseStorage */; };
+		C0CE8A822CC715580086E6BE /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE8A812CC715580086E6BE /* SnapsViewController.swift */; };
+		C0CE8A842CC718630086E6BE /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE8A832CC718630086E6BE /* ImagenViewController.swift */; };
+		C0CE8A862CC724830086E6BE /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE8A852CC724830086E6BE /* ElegirUsuarioViewController.swift */; };
+		C0CE8A8A2CC72A220086E6BE /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE8A892CC72A220086E6BE /* Usuario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		C0AF563E2CBDD49F00B7E961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0AF56402CBDD49F00B7E961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0AF56462CBDD7FA00B7E961 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C0CE8A812CC715580086E6BE /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		C0CE8A832CC718630086E6BE /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
+		C0CE8A852CC724830086E6BE /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
+		C0CE8A892CC72A220086E6BE /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +77,11 @@
 		C0AF56312CBDD49D00B7E961 /* BernaolaSnapchat */ = {
 			isa = PBXGroup;
 			children = (
+				C0CE8A882CC72A050086E6BE /* Modelos */,
+				C0CE8A872CC729CA0086E6BE /* ViewControllers */,
 				C0AF56462CBDD7FA00B7E961 /* GoogleService-Info.plist */,
 				C0AF56322CBDD49D00B7E961 /* AppDelegate.swift */,
 				C0AF56342CBDD49D00B7E961 /* SceneDelegate.swift */,
-				C0AF56362CBDD49D00B7E961 /* inicarSesionViewController.swift */,
 				C0AF56382CBDD49D00B7E961 /* Main.storyboard */,
 				C0AF563B2CBDD49F00B7E961 /* Assets.xcassets */,
 				C0AF563D2CBDD49F00B7E961 /* LaunchScreen.storyboard */,
@@ -86,6 +95,25 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0CE8A872CC729CA0086E6BE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0CE8A812CC715580086E6BE /* SnapsViewController.swift */,
+				C0CE8A832CC718630086E6BE /* ImagenViewController.swift */,
+				C0AF56362CBDD49D00B7E961 /* inicarSesionViewController.swift */,
+				C0CE8A852CC724830086E6BE /* ElegirUsuarioViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C0CE8A882CC72A050086E6BE /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				C0CE8A892CC72A220086E6BE /* Usuario.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +169,7 @@
 			mainGroup = C0AF56262CBDD49D00B7E961;
 			packageReferences = (
 				C0AF56482CBDDB9A00B7E961 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C0AF56542CBDEA2F00B7E961 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = C0AF56302CBDD49D00B7E961 /* Products */;
 			projectDirPath = "";
@@ -170,9 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CE8A822CC715580086E6BE /* SnapsViewController.swift in Sources */,
+				C0CE8A842CC718630086E6BE /* ImagenViewController.swift in Sources */,
+				C0CE8A8A2CC72A220086E6BE /* Usuario.swift in Sources */,
 				C0AF56372CBDD49D00B7E961 /* inicarSesionViewController.swift in Sources */,
 				C0AF56332CBDD49D00B7E961 /* AppDelegate.swift in Sources */,
 				C0AF56352CBDD49D00B7E961 /* SceneDelegate.swift in Sources */,
+				C0CE8A862CC724830086E6BE /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +429,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 9.0.0;
+			};
+		};
+		C0AF56542CBDEA2F00B7E961 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
